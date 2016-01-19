@@ -1,0 +1,841 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet"href="cass/base.css"/>
+<link rel="stylesheet"href="cass/style.css"/>
+<script>
+	window.onload=function(){
+		var box1=document.getElementById('box1');
+		var oLi=box1.getElementsByTagName('li');
+		var oDiv=box1.getElementsByTagName('div');
+		for(var i=0;i<oLi.length;i++){
+			oLi[i].index=i
+			oLi[i].onmouseover=function(){
+				for(var i=0;i<oLi.length;i++){
+					oLi[i].className='fl ';
+					oDiv[i].style.display='none';
+					}
+				this.className='fl od';
+				oDiv[this.index].style.display='block';
+				}
+			oLi[i].onmouseout=function(){
+				
+				oDiv[this.index].style.display='none'
+				}
+			}
+			var yuo=document.getElementById('yuo');
+			var css=document.getElementById('css');
+			var nod=css.getElementsByTagName('li');
+			var dot=yuo.getElementsByTagName('div');
+			for(var i=0;i<nod.length;i++){
+				nod[i].index=i
+				nod[i].onmouseover=function(){
+					for(var i=0;i<nod.length;i++){
+						dot[i].className='k_box'
+						nod[i].className='fl mid_box_li'
+						}
+					this.className='fl mid_box_li lt'+this.index;
+					dot[this.index].className='k_box show'
+					}
+				}
+			var shu=document.getElementById('shu');
+			var shi=shu.getElementsByTagName('li');
+			var r_box=document.getElementById('r_box');
+			var pox=r_box.getElementsByTagName('div');
+			for(var i=0;i<shi.length;i++){
+				shi[i].index=i
+				shi[i].onmouseover=function(){
+					for(var i=0;i<shi.length;i++){
+						shi[i].className='fl kop'+i;
+						pox[i].className='';
+					}
+					this.className='fl kop'+this.index+' r_box_li'+this.index;
+					pox[this.index].className='xian'
+				}	
+			}
+		}
+</script>
+</head>
+
+<body>
+	<div class="LHX_header_top">
+    	<div class="header_top_box clearfix">
+        	<a href="#" class="hear_top_l fl"></a>
+            <ul class="header_top_cent fl">
+            	<li class="fl">
+                	<a href="#" >
+                    	<i class="fl header_top_i"></i>
+               			<span class="fl hear_top_sp">注册</span>
+                    </a>
+                    <li class="fl">
+                	<a href="#" >
+                    	<i class="fl header_top_i1"></i>
+               			<span class="fl hear_top_sp">注册</span>
+                    </a>
+                </li>
+                <li class="fl">
+                	<a href="#" >
+                    	<i class="fl header_top_i2"></i>
+               			<span class="fl hear_top_sp">注册</span>
+                    </a>
+                </li>
+                
+            </ul>
+        	<div class="fl jop" id="box1">
+            	<ul class="clearfix hear_top_r"> 
+            	<li class="fl od oo">
+                	<a href="#" class="uk">
+                	<span class="fl">客服</span>
+            		<i class="hear_top_ri fl"></i>
+                    </a>
+                    <div class="active">
+                    <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                    <p class="div1 clearfix">
+                        <a href="#" class="fl">修改密码</a>
+                        <a href="#" class="fl">实名认证</a>
+                        <a href="#" class="fl">认证手机</a>
+                    </p>
+                    <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                    <p class="div1 clearfix">
+                        <a href="#" class="fl">修改密码</a>
+                        <a href="#" class="fl">实名认证</a>
+                        <a href="#" class="fl">认证手机</a>
+                    </p>
+                    <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                    <p class="div1 clearfix">
+                        <a href="#" class="fl">修改密码</a>
+                        <a href="#" class="fl">实名认证</a>
+                        <a href="#" class="fl">认证手机</a>
+                    </p>
+                    <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                    <p class="div1 clearfix">
+                        <a href="#" class="fl">修改密码</a>
+                        <a href="#" class="fl">实名认证</a>
+                        <a href="#" class="fl">认证手机</a>
+                    </p>
+            	</div>
+               	</li>
+                <li class="fl">
+                	<a href="#" class="uk">
+                	<span class="fl">畅游全服务</span>
+            		<i class="hear_top_ri fl"></i>
+                    </a>
+                    <div class="active opo">
+            	<h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的名字</b></a></h2>
+                <p class="div1 clearfix">
+                	<a href="#" class="fl">修改密码</a>
+                    <a href="#" class="fl">实名认证</a>
+                    <a href="#" class="fl">认证手机</a>
+                </p>
+                <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                <p class="div1 clearfix">
+                	<a href="#" class="fl">修改密码</a>
+                    <a href="#" class="fl">实名认证</a>
+                    <a href="#" class="fl">认证手机</a>
+                </p>
+                <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                <p class="div1 clearfix">
+                	<a href="#" class="fl">修改密码</a>
+                    <a href="#" class="fl">实名认证</a>
+                    <a href="#" class="fl">认证手机</a>
+                </p>
+                <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                <p class="div1 clearfix">
+                	<a href="#" class="fl">修改密码</a>
+                    <a href="#" class="fl">实名认证</a>
+                    <a href="#" class="fl">认证手机</a>
+                </p>
+            </div>
+               	</li>
+                <li class="fl">
+                	<a href="#" class="uk">
+                	<span class="fl">畅游全游戏</span>
+            		<i class="hear_top_ri fl"></i>
+                    </a>
+                    <div class="active">
+            	<h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的学校</b></a></h2>
+                <p class="div1 clearfix">
+                	<a href="#" class="fl">修改密码</a>
+                    <a href="#" class="fl">实名认证</a>
+                    <a href="#" class="fl">认证手机</a>
+                </p>
+                <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                <p class="div1 clearfix">
+                	<a href="#" class="fl">修改密码</a>
+                    <a href="#" class="fl">实名认证</a>
+                    <a href="#" class="fl">认证手机</a>
+                </p>
+                <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                <p class="div1 clearfix">
+                	<a href="#" class="fl">修改密码</a>
+                    <a href="#" class="fl">实名认证</a>
+                    <a href="#" class="fl">认证手机</a>
+                </p>
+                <h2 class="tit1" ><a href="#" class="clearfix"><i class="fl"></i><b class="fl">我的通行证</b></a></h2>
+                <p class="div1 clearfix">
+                	<a href="#" class="fl">修改密码</a>
+                    <a href="#" class="fl">实名认证</a>
+                    <a href="#" class="fl">认证手机</a>
+                </p>
+            </div>
+               	</li>
+            </ul>
+            	
+           	 	
+            	
+           </div>
+           </div>
+        </div>
+    </div>
+    <div class="LHX_header_cent">
+    	
+    </div>
+   <div class="cont_box"> 
+    	
+        	<div class="header_main">
+            
+             <div class="header_nav clearfix">
+                <h1 class="fl header_h1"><a href="#">灵魂回响</a></h1>
+                <ul class="fl">
+                	<li class="header_nav_li fl" >
+                    	<a href="#">
+                    	   <b>首页</b></br>
+                           <i>HOME</i>
+                        </a>
+                    </li>
+                    <li class="header_nav_li fl" >
+                    	<a href="#">
+                    	   <b>新闻公告</b></br>
+                           <i>HOME</i>
+                        </a>
+                    </li>
+                    <li class="header_nav_li fl" >
+                    	<a href="#">
+                    	   <b>游戏特色</b></br>
+                           <i>HOME</i>
+                        </a>
+                    </li>
+                    <li class="header_nav_li fl" >
+                    	<a href="#">
+                    	   <b>游戏特色</b></br>
+                           <i>HOME</i>
+                        </a>
+                    </li>
+                    <li class="header_nav_li fl" >
+                    	<a href="#">
+                    	   <b>游戏特色</b></br>
+                           <i>HOME</i>
+                        </a>
+                    </li>
+                    <li class="header_nav_li fl" >
+                    	<a href="#">
+                    	   <b>游戏特色</b></br>
+                           <i>HOME</i>
+                        </a>
+                    </li>
+                    <li class="header_nav_li fl" >
+                    	<a href="#">
+                    	   <b>游戏特色</b></br>
+                           <i>HOME</i>
+                        </a>
+                    </li>
+                    <li class="header_nav_li fl" >
+                    	<a href="#">
+                    	   <b>游戏特色</b></br>
+                           <i>HOME</i>
+                        </a>
+                    </li>
+                    <li class="header_nav_li fl" >
+                    	<a href="#">
+                    	   <b>游戏特色</b></br>
+                           <i>HOME</i>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        	</div>
+    
+    	<div class="mid_box ">
+        	<div class="clearfix">
+            	<div class="fl mid_box_top ">
+            		<div class="clearfix mid_box_l">
+                	<a href="#" class="mid_box_la1 fl">游戏下载</a>
+                	<a href="#" class="mid_box_la2 fl">账户注册</a>
+                	<a href="#" class="mid_box_la3 fl">账户充值</a>
+                	<a href="#" class="mid_box_la4 fl">兑换中心</a>
+                	<a href="#" class="mid_box_la5 fl">新手指南</a>
+                
+        	    	</div>
+        	 	<div class="mid_box_bot">
+            		<a href="#"><img src="img/main_a1 (1).jpg"/></a>
+                	<i>官方<b></b></i>
+                	<i class="i1">媒体</i>
+                	<ul class="mid_box_ul clearfix">
+                	<li class="fl">
+                    	<a href="#" class="a1"></a>
+                    </li>
+                    <li class="fl">
+                    	<a href="#" class="a2"></a>
+                    </li>
+                    <li class="fl">
+                    	<a href="#" class="a2"></a>
+                    </li>
+                    <li class="fl">
+                    	<a href="#" class="a2"></a>
+                    </li>
+                    <li class="fl">
+                    	<a href="#" class="a2"></a>
+                    </li>
+                </ul>
+        		</div>
+       		</div>
+        		<div class="fl class="n_box"">
+        			<div class="mid_box_lt">
+            			<p><a href="#" class="mid_box_la">电信一区<i>【元素殿堂】</i>欢迎进驻!</a></p>
+                		<p ><a href="#" class="mid_box_la">网通一区<i>【雷霆之怒】</i>欢迎进驻!</a></p>
+            		</div>
+            		<div class="mid_box_rd">
+            			<div class="mid_box_rt clearfix">
+            			<p class="fl"><a href="#" class="mid_box_pa">距离上次访问有<span class="mid_box_ps">220</span>条更新</a></p>
+                    	<a href="#"><i class="fl"></i></a>
+                    	<b class="fl">关注：</b>
+                    	<ul class="fr tot">
+                    		<li class="fl iip">
+                        		<a href="#" class="tot_a1"></a>
+                        	</li>
+                            <li class="fl iip">
+                        		<a href="#" class="tot_a2"></a>
+                        	</li>
+                            <li class="fl iip">
+                        		<a href="#"class="tot_a3"></a>
+                        	</li>
+                    	</ul>
+                		</div>
+                     </div>
+                <div class="mid_box_mian " id="yuo">
+                    	<ul class="clearfix mid_mian_ul" id="css">
+                    		<li class="fl mid_box_li lt0">综合</li>
+                        	<li class="fl mid_box_li">综合</li>
+                        	<li class="fl mid_box_li">综合</li>
+                        	<li class="fl mid_box_li">综合</li>
+                    	</ul>
+                   	
+                	<div class="k_box show">
+                    	<h3 class="mid_box_h3"><a href="#">4月8日大版开启 新职业术士魔神降临</a></h3>
+                        <ul class="k_ul">
+                        	<li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="fr k_bot">
+                        	<em class="fl"></em>
+                           	<b class="fl">更多信息&gt</b>
+                        </a>
+                        
+                    </div>
+                    <div class="k_box">
+                    	<h3 class="mid_box_h3"><a href="#">5月8日大版开启 新职业术士魔神降临</a></h3>
+                        <ul class="k_ul">
+                        	<li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="fr k_bot">
+                        	<em class="fl"></em>
+                           	<b class="fl">更多信息&gt</b>
+                        </a>
+                        
+                    </div>
+                    <div class="k_box">
+                    	<h3 class="mid_box_h3"><a href="#">6月8日大版开启 新职业术士魔神降临</a></h3>
+                        <ul class="k_ul">
+                        	<li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="fr k_bot">
+                        	<em class="fl"></em>
+                           	<b class="fl">更多信息&gt</b>
+                        </a>
+                        
+                    </div>
+                    <div class="k_box">
+                    	<h3 class="mid_box_h3"><a href="#">7月8日大版开启 新职业术士魔神降临</a></h3>
+                        <ul class="k_ul">
+                        	<li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                            <li class="clearfix">
+                            	
+                             		<i class="fl"><a href="#">【新闻】</a></i>
+                                   <b class="fl"><a href="#">两大满级两大满级两大满级两大满级</a></b>
+                                
+                                <span class="fr">03/24</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="fr k_bot">
+                        	<em class="fl"></em>
+                           	<b class="fl">更多信息&gt</b>
+                        </a>
+                        
+                    </div>
+                </div>
+            
+           </div>
+        <div class=" p_div">
+        	<ul class="p_ul clearfix">
+              <li class="fl p_li"><a href="#" ><img src="img/main_a2.jpg"/></a></li>
+              <li class="fl  p_li"><a href="#" ><img src="img/main_a2.jpg"/></a></li>
+              <li class="fl  p_li"><a href="#" ><img src="img/main_a2.jpg"/></a></li>
+              <li class="fl  p_li"><a href="#" ><img src="img/main_a2.jpg"/></a></li>
+            </ul>
+        </div>
+        <div class="r_box clearfix">
+        	<div class="fl r_box_l" id="r_box">
+            	<ul class="clearfix ot" id="shu">
+                	<li class="r_box_li0 fl kop0"></li>
+                    <li class="fl"></li>
+                    <li class="fl"></li>
+                    <li class="fl"></li>
+                    <li class="fl"></li>
+                    <li class="fl"></li>
+                </ul>
+                <div class=" xian"><a href="#"><img src="img/cike.jpg" /></a></div>
+                <div ><a href="#"><img src="img/shenshe.jpg" /></a></div>
+                <div ><a href="#"><img src="img/cike.jpg" /></a></div>
+                <div ><a href="#"><img src="img/cike.jpg" /></a></div>
+                <div ><a href="#"><img src="img/cike.jpg" /></a></div>
+                <div ><a href="#"><img src="img/cike.jpg" /></a></div>
+                
+            </div>
+            <div class="fl r_box_r">
+            	<h5 class="r_box_rh clearfix">
+                	<a href="#">
+                    	<i class="fl"></i>
+                    	<em class="fl">活动中心</em>
+                     </a>
+                </h5>
+            	<div class="r_box_rdv">
+                	<a href="#"><img src="img/1.jpg" class="r_box_rimg"/></a>
+                	<div class="r_fu">
+                    	<div class="r_box_dv"></div>
+                    	<p class="r_box_rp clearfix">
+                    		<i class="fl">女武神的密保</i>
+                        	<b class="fr">共1234567人关注</b>
+                    	</p>
+                    </div>
+                </div>
+                <ul class="u_ul">
+                	<li class="u_li">
+                    	<a href="#" class="u_a clearfix"><b class="fl">神住着的成长礼</b><i class="fr">进行中</i></a>
+                    </li>
+                    <li class="u_li">
+                    	<a href="#" class="u_a clearfix"><b class="fl">神住着的成长礼</b><i class="fr">进行中</i></a>
+                    </li>
+                    <li class="u_li">
+                    	<a href="#" class="u_a clearfix"><b class="fl">神住着的成长礼</b><i class="fr">进行中</i></a>
+                    </li>
+                    <li class="u_li">
+                    	<a href="#" class="u_a clearfix"><b class="fl">神住着的成长礼</b><i class="fr">进行中</i></a>
+                    </li>
+                    <li class="u_li">
+                    	<a href="#" class="u_a clearfix"><b class="fl">神住着的成长礼</b><i class="fr">进行中</i></a>
+                    </li>
+                </ul>
+            </div>
+         </div>
+            <div class="f_box">
+            <div class="w_box clearfix">
+            	<div class="fl w_box_left">
+                	<div class="w_box_lt">
+                    	<h6 class="w_box_h6"><a href="#">快捷入口</a></h6>
+                        <div class="clearfix o_div">
+                        	<ul class="fl w_box_lul">
+                            	<li class="w_box_l-li">
+                                	<a href="#">&middot账号管理</a>
+                                </li>
+                                <li class="w_box_l-li">
+                                	<a href="#">&middot账号管理</a>
+                                </li>
+                                <li class="w_box_l-li">
+                                	<a href="#">&middot账号管理</a>
+                                </li>
+                                <li class="w_box_l-li">
+                                	<a href="#">&middot账号管理</a>
+                                </li>
+                            </ul>
+                            <ul class="fl ">
+                            	<li class="w_box_l-li">
+                                	<a href="#">&middot账号管理</a>
+                                </li>
+                                <li class="w_box_l-li">
+                                	<a href="#">&middot账号管理</a>
+                                </li>
+                                <li class="w_box_l-li">
+                                	<a href="#">&middot账号管理</a>
+                                </li>
+                                <li class="w_box_l-li">
+                                	<a href="#">&middot账号管理</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="img/main_a3_3.jpg" />
+                    <div class="y_tit">
+                    	<a href="#">媒体合作专区</a>
+                    </div>
+                    <a href="#" class="y_div"></a>
+                </div>
+            	<div class="fl w_box_mid">
+                	<h5 class="n_h5 clearfix">
+                    	<a href="#">
+                        	<i class="fl"></i>
+                        	<b class="fl">万佳交流</b>
+                        </a>
+                    </h5>
+                    <div class="clearfix j_box">
+                    	<ul class="fl j_ul">
+                        	<li class="fl j_ul_one">玩家攻略</li>
+                            <li class="fl">玩家攻略</li>
+                            <li class="fl">玩家攻略</li>
+                        </ul>
+                        <a href="#" class="fl j_box_a">
+                        	<i></i>
+                        	更多信息&gt
+                        </a>
+                     </div>
+                    <div class="clearfix g_box">
+                        	<a href="#"><img src="img/1031.jpg" class="fl k_box_img "/></a>
+                            <ul class="fl k_box_ul">
+                            	<li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                            </ul>
+                        </div>
+                    <h5 class="n_h5 clearfix">
+                    	<a href="#">
+                        	<i class="fl"></i>
+                        	<b class="fl">万佳交流</b>
+                        </a>
+                    </h5>
+                    <div class="clearfix j_box">
+                    	<ul class="fl j_ul">
+                        	<li class="fl j_ul_one">玩家攻略</li>
+                            <li class="fl">玩家攻略</li>
+                            <li class="fl">玩家攻略</li>
+                        </ul>
+                        <a href="#" class="fl j_box_a">
+                        	<i></i>
+                        	更多信息&gt
+                        </a>
+                     </div>
+                    <div class="clearfix g_box">
+                        	<a href="#"><img src="img/1031.jpg" class="fl k_box_img "/></a>
+                            <ul class="fl k_box_ul">
+                            	<li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                                <li class="k_box_li">
+                                	<a href="#">·生活技能生活技能生活技能生活技能</a>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            	<div class="fl">
+                	<h5 class="n_h5 clearfix">
+                    	<a href="#">
+                        	<i class="fl"></i>
+                        	<b class="fl">万佳交流</b>
+                        </a>
+                    </h5>
+                    <div class="i_box i_i">
+                    	<ul class="i_ul">
+                        	<li class="i_li clearfix">
+                            	<i class="fl">新手入门</i>
+                                <em class="fl"></em>
+                                 <div class="i_a">
+                                 <b class="fl"><a href="#">注册账号</a></b>
+                                 <b class="fl"><a href="#">下载游戏</a></b>
+                                 <b class="fl"><a href="#">登录游戏</a></b>
+                                 </div>
+                            </li>
+                            <li class="i_li clearfix">
+                            	<i class="fl">新手入门</i>
+                                <em class="fl"></em>
+                                 <div class="i_a">
+                                 <b class="fl"><a href="#">注册账号</a></b>
+                                 <b class="fl"><a href="#">下载游戏</a></b>
+                                 <b class="fl"><a href="#">登录游戏</a></b>
+                                 </div>
+                            </li>
+                            <li class="i_li clearfix">
+                            	<i class="fl">新手入门</i>
+                                <em class="fl"></em>
+                                 <div class="i_a">
+                                 <b class="fl"><a href="#">注册账号</a></b>
+                                 <b class="fl"><a href="#">下载游戏</a></b>
+                                 <b class="fl"><a href="#">登录游戏</a></b>
+                                 </div>
+                            </li>
+                            <li class="i_li clearfix">
+                            	<i class="fl">新手入门</i>
+                                <em class="fl"></em>
+                                 <div class="i_a">
+                                 <b class="fl"><a href="#">注册账号</a></b>
+                                 <b class="fl"><a href="#">下载游戏</a></b>
+                                 <b class="fl"><a href="#">登录游戏</a></b>
+                                 </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <h5 class="n_h5 clearfix">
+                    	<a href="#">
+                        	<i class="fl"></i>
+                        	<b class="fl">万佳交流</b>
+                        </a>
+                    </h5>
+                    <div class="i_box">
+                    	<ul class="i_ul">
+                        	<li class="i_li clearfix">
+                            	<i class="fl">新手入门</i>
+                                <em class="fl"></em>
+                                 <div class="i_a">
+                                 <b class="fl"><a href="#">注册账号</a></b>
+                                 <b class="fl"><a href="#">下载游戏</a></b>
+                                 <b class="fl"><a href="#">登录游戏</a></b>
+                                 </div>
+                            </li>
+                            <li class="i_li clearfix">
+                            	<i class="fl">新手入门</i>
+                                <em class="fl"></em>
+                                 <div class="i_a">
+                                 <b class="fl"><a href="#">注册账号</a></b>
+                                 <b class="fl"><a href="#">下载游戏</a></b>
+                                 <b class="fl"><a href="#">登录游戏</a></b>
+                                 </div>
+                            </li>
+                            <li class="i_li clearfix">
+                            	<i class="fl">新手入门</i>
+                                <em class="fl"></em>
+                                 <div class="i_a">
+                                 <b class="fl"><a href="#">注册账号</a></b>
+                                 <b class="fl"><a href="#">下载游戏</a></b>
+                                 <b class="fl"><a href="#">登录游戏</a></b>
+                                 </div>
+                            </li>
+                            <li class="i_li clearfix">
+                            	<i class="fl">新手入门</i>
+                                <em class="fl"></em>
+                                 <div class="i_a">
+                                 <b class="fl"><a href="#">注册账号</a></b>
+                                 <b class="fl"><a href="#">下载游戏</a></b>
+                                 <b class="fl"><a href="#">登录游戏</a></b>
+                                 </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+        </div>
+        <div class="font_box"></div>
+        <p class="foot_p">抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏抵制不良游戏</p>
+        </div>
+        </div>
+       
+       
+    </div>
+     <div class="opp"></div>
+  
+</body>
+</html>
